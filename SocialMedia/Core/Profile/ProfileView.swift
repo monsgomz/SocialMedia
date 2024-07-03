@@ -8,14 +8,46 @@
 import SwiftUI
 
 struct ProfileView: View {
+	private let columns : [GridItem] = [.init(.flexible(), spacing: 1),
+		.init(.flexible(), spacing: 1),
+		.init(.flexible(), spacing: 1),]
+	
 	var body: some View {
-		VStack(alignment: .center){
-			///Header
-			Header()
-			
-			///Grid
-			
-			
+		NavigationStack {
+			ScrollView {
+				VStack(alignment: .center){
+					///Header
+					Header()
+					
+					///Grid
+					LazyVGrid(columns: columns, content: {
+						
+						ForEach(1 ... 7, id: \.self) { index in
+							
+							Image("image\(index)")
+								.resizable()
+								.scaledToFit()
+								.frame(width: 100, height: 100, alignment: .center)
+						}
+
+					
+						
+					})
+					
+				}
+			}
+			.toolbar {
+				ToolbarItem (placement: .principal){
+					Text("Profile")
+						.bold()
+				}
+				
+				ToolbarItem (placement: .topBarTrailing){
+					Image(systemName: "line.3.horizontal")
+						.bold()
+				}
+				
+			}
 		}
 		
 	}
