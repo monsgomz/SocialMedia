@@ -11,6 +11,8 @@
 		C222ABD62C34A2760024340C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222ABD52C34A2760024340C /* ContentView.swift */; };
 		C222ABD82C34A2770024340C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C222ABD72C34A2770024340C /* Assets.xcassets */; };
 		C222ABDB2C34A2770024340C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C222ABDA2C34A2770024340C /* Preview Assets.xcassets */; };
+		C222ABEF2C35E18C0024340C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222ABEE2C35E18C0024340C /* MainTabView.swift */; };
+		C222ABF12C35E2C50024340C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222ABF02C35E2C50024340C /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C222ABD52C34A2760024340C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C222ABD72C34A2770024340C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C222ABDA2C34A2770024340C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C222ABEE2C35E18C0024340C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C222ABF02C35E2C50024340C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		C222ABE82C35D8AC0024340C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C222ABF02C35E2C50024340C /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 		C222ABEC2C35DA680024340C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				C222ABEE2C35E18C0024340C /* MainTabView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -241,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C222ABF12C35E2C50024340C /* ProfileView.swift in Sources */,
 				C222ABD62C34A2760024340C /* ContentView.swift in Sources */,
 				C222ABD42C34A2760024340C /* SocialMediaApp.swift in Sources */,
+				C222ABEF2C35E18C0024340C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
